@@ -114,6 +114,7 @@ function Lists() {
 
         
       <Modal title="Update List" open={isModalOpen} onOk={updatelist} onCancel={handleCancel}>
+        <div className='model-container'>
        <label htmlFor="title">Title :</label><br />
        <input type="text" placeholder='Title' onChange={(e)=>setUpdateTitle(e.target.value)} /><br />
        <label htmlFor="date"> Date :</label><br />
@@ -121,6 +122,7 @@ function Lists() {
        <label htmlFor="discription">Discription :</label><br />
        
        <textarea name="description" onChange={(e)=>setUpdateDiscription(e.target.value)} id="" cols="25" rows="5"></textarea><br />
+       </div>
       </Modal>
       </>
   )

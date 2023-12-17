@@ -112,7 +112,25 @@ backdrop-filter: blur(2px);
  border-radius: 13px;
  margin-left: 34%;
 }
-
+ @media (max-width : 800px) {
+  .login-container{
+    width: 90vw;
+    margin-left: 10px;
+  }
+  .list-container{
+    width: 90vw;
+    margin-left: 10px;
+  }
+  .register-container{
+    width: 90vw;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .landing-container h1{
+    font-size: 30px !important;
+  }
+  
+ }
 .login2-container{
 display: flex;
 flex-wrap: wrap;
@@ -202,3 +220,57 @@ backdrop-filter: blur(2px);
   scale: 1.05;
 }
 /*  Show lists CSS end   */
+.model-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.model-container input{
+  width: 90%;
+  height: 25px;
+  border: 1px solid #b8b4b4;
+  padding-left: 10px;
+  border-radius: 13px;
+}
+.model-container textarea{
+  width: 90%;
+  border: 1px solid #b8b4b4;
+  padding-left: 10px;
+  border-radius: 13px;
+}
+.landing-container h1{
+  font-size: 4vw;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.landing-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  width: 99vw;
+}
+.landing2-container{
+  width: 60%;
+min-height: 35vh;
+text-align: center;
+
+}
+.landing3-container{
+ margin-top: 30px;
+ 
+}
+.landing3-container button{
+  padding: 5px 10px;
+  border: 1px solid rgb(235, 225, 225);
+  border-radius: 8px;
+}
+.landing3-container button:hover{
+  scale: 1.05;
+}
+.signup-button{
+ margin-right: 10px;
+}
