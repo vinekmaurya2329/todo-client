@@ -11,7 +11,7 @@ function Register() {
      async function submit(e){
         e.preventDefault()
 
-         const  users = await  axios.post('http://localhost:4000/register',{name:name,email:email,number:number,password:password})
+         const  users = await  axios.post('https://todoapi-2t85.onrender.com/register',{name:name,email:email,number:number,password:password})
           Swal.fire(`${users.data.ft}`,`${users.data.message}`,`${users.data.lt}`)
          console.log(users);
          localStorage.setItem('user',JSON.stringify(users.data.user));

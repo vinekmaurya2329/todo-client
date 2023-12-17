@@ -12,7 +12,7 @@ function Login() {
 
     async function loginSubmit(e){
         e.preventDefault()
-       const users = await axios.post('http://localhost:4000/login',{email:email,password:password})
+       const users = await axios.post('https://todoapi-2t85.onrender.com/login',{email:email,password:password})
         localStorage.setItem('user',JSON.stringify(users.data.user))
        Swal.fire(`${users.data.ft}`,`${users.data.message}`,`${users.data.lt}`)
       if(users.data.lt == 'success') window.location.href = '/lists'

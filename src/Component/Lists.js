@@ -38,14 +38,14 @@ function Lists() {
   //  update list function 
   async function updatelist(listId){
     setIsModalOpen(false);
-    const url = `http://localhost:4000/updatelist/`+updateId ;
+    const url = `https://todoapi-2t85.onrender.com/updatelist/`+updateId ;
      const updatedlist = await axios.put(url,{title:updateTitle,date:updateDate,discription:updateDiscription})
     Swal.fire(updatedlist.data.ft,updatedlist.data.message,updatedlist.data.lt);
      window.location.reload()
   }
     useEffect(()=>{
        async function fetchList(){
-           const lists =  await axios.post('http://localhost:4000/allLists',{email:localUser.email})
+           const lists =  await axios.post('https://todoapi-2t85.onrender.com/allLists',{email:localUser.email})
           
            setAllList(lists.data.lists)
            
@@ -55,13 +55,13 @@ function Lists() {
     },[])
     async function listSubmit(e){ 
       e.preventDefault()
-   const lists = await axios.post('http://localhost:4000/setlist',{title:title,discription:discription,date:date,email:localUser.email})
+   const lists = await axios.post('https://todoapi-2t85.onrender.com/setlist',{title:title,discription:discription,date:date,email:localUser.email})
     Swal.fire(lists.data.ft,lists.data.message,lists.data.lt)
     window.location.reload()
     }
     // delete function 
     async function deleteList(listId){
-         const url = `http://localhost:4000/deleteList/`+listId
+         const url = `https://todoapi-2t85.onrender.com/deleteList/`+listId
          
         const deletedList = await  axios.delete(url)
         Swal.fire(deletedList.data.ft,deletedList.data.message,deletedList.data.lt)
