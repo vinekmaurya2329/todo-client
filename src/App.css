@@ -1,0 +1,204 @@
+body{
+  background-image: url('https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.register-container{
+  width: 30vw;
+  height: 60vh;
+ background-color: rgba(255, 254, 254, 0.3);
+  margin-left: 35vw;
+  margin-top: 20vh;
+border: 1px solid rgb(244, 238, 238);
+border-radius: 13px;
+-webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+}
+.register-container .main-caption{
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: 200 !important;
+  text-align: center;
+}
+.input-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+padding-top: 15px;}
+.input-container input{
+  width: 80%;
+  height: 30px;
+  border: 1px solid rgb(242, 237, 237);
+
+  border-radius: 13px;
+  border-top-style: none;
+  padding-left: 10px;
+  margin-left: 17px;
+ background-color: rgba(255, 254, 254, 0.2);
+
+  -webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+}
+.button-submit{
+  width: 85% !important;
+  background-color: antiquewhite;
+}
+.button-submit:hover{
+  scale: 1.05;
+}
+
+/*   List CSS  start here  */
+
+.list-container{
+  width: 30vw;
+  height: 57vh;
+  background-color: gray;
+  margin-left: 35%;
+  margin-top: 20px;
+  border-radius: 13px;
+  background-color: rgba(255, 254, 254, 0.3);
+  -webkit-backdrop-filter: blur(1px);
+backdrop-filter: blur(1px);
+}
+.list2-container{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* row-gap: 10px; */
+  /* background-color: red; */
+}
+.list2-container input{
+  width: 80%;
+  height: 30px;
+  border: 1px solid rgb(242, 237, 237);
+/* padding:0 15px; */
+  border-radius: 13px;
+  border-top-style: none;
+  background-color: rgba(255, 254, 254, 0.2);
+
+  -webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+}
+.list2-container textarea{
+  width: 80%;
+  border: 1px solid rgb(242, 237, 237);
+  border-radius: 13px;
+  background-color: rgba(255, 254, 254, 0.2);
+
+  -webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+}
+.list2-container .add-button:hover{
+  scale: 1.05;
+}
+
+/* list CSS end from here */
+
+/* login CSS start  */
+.login-container{
+  width: 30vw;
+  height: 50vh;
+  background-color: rgba(255, 254, 254, 0.3);
+ background-color: rgba(255, 254, 254, 0.3);
+ -webkit-backdrop-filter: blur(1px);
+ backdrop-filter: blur(1px);
+ border-radius: 13px;
+ margin-left: 34%;
+}
+
+.login2-container{
+display: flex;
+flex-wrap: wrap;
+width: 90%;
+height: 90%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 15px;
+
+}
+.login2-container .login-button:hover{
+scale: 1.05;
+}
+.login2-container input{
+  width: 80%;
+  height: 30px;
+  border-radius: 13px;
+  border: 1px solid rgb(242, 237, 237);
+   padding-left: 10px;
+  border-top-style: none;
+  background-color: rgba(255, 254, 254, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+}
+/* login CSS end   */
+
+/*  Show list CSS  start */
+
+.allList-container{
+  width: 95vw;
+  height: auto;
+  
+  /* background-color: gray; */
+    
+}
+.alllist2-container{
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+ flex-wrap: wrap;
+ background-color: rgba(255, 254, 254, 0.3);
+ -webkit-backdrop-filter: blur(1px);
+ backdrop-filter: blur(1px);
+ border-radius: 13px;
+ margin: 10px 10px;
+ 
+}
+
+.list2-child{
+  
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.list2-child button {
+   
+   /* height: 20px; */
+   padding: 5px 10px;
+   text-align: center;
+   border: 1px solid rgb(220, 211, 211);
+   border-radius: 8px;
+}
+.list2-child input{
+  height: 20px;
+  width: 20px;
+  color: green;
+  border: 1px solid green;
+  background-color: green;
+}
+.title-list{
+  font-size: 19px;
+  color: rgb(0, 0, 0);
+  font-family: cursive;
+}
+.edit-button{
+  background-color: rgb(229, 223, 223);
+}
+.delete-button:hover{
+  background-color: rgb(244, 128, 128);
+  scale: 1.05;
+}
+.edit-button:hover{
+  background-color: rgb(168, 247, 168);
+  scale: 1.05;
+}
+/*  Show lists CSS end   */
